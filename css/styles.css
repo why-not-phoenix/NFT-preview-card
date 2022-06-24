@@ -1,134 +1,164 @@
-/*General Outlook*/
-/*------------------------------------------------------------*/
+
+/* General Style */
+
+html {
+  font-size: 10px;
+}
+
 body {
-  background-color: darkblue;/*old browsers*/
-  background-color: hsl(217, 54%, 11%);
-  color: aqua;/*old browsers*/
-  color: hsl(215, 51%, 70%);
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  background-color: #0c182b; /* Fallback */
+  background-color: hsl(217, 54%, 11%);
+  color: #8babd9; /* Fallback */
+  color: hsl(215, 51%, 70%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-/*Container*/
-/*------------------------------------------------------------*/
-.main-section {
-  background-color: darkblue; /*old browsers*/
-  background-color: hsl(216, 50%, 16%);
-  border-radius: 20px;
-  width: 18.75rem;
-  margin: 70px auto 30px;
-  padding: 1rem;
-}
-
-.r {
-  max-width: 18.75rem;
-  height: 18.75rem;
-  border-radius: 20px;
-}
-
-.r:hover {
-  cursor: pointer;
-  background-color: cyan;/*old browsers*/
-  background-color: hsl(178, 100%, 50%);
-  opacity: 1;
-}
-
-.r:hover .equilibrium {
-  opacity: 0.4;
-}
-
-.equilibrium {
-  margin: auto;
-  max-width: 18.75rem;
-  border-radius: 20px;
-}
-
-.invisible-img {
-  position: absolute;
-  top: 13.25rem;
-  right: 46rem;
-  opacity: 0;
-}
-
-.r:hover .invisible-img {
-  opacity: 1;
-}
-
-
-
-.para-2 {
-  margin: 20px 0;
-}
-
-.eth {
-  color: cyan; /*old browsers*/
-  color: hsl(178, 100%, 50%);
-  display: inline;
-}
-
-.time-lapse {
-  float: right;
-}
-
-.icon-info {
-  display: inline;
-  margin-left: 5px;
+span {
+  margin-left: 0.5rem;
 }
 
 hr {
   border-top: none;
-  border-color: darkblue;/*old browsers*/
+  border-color: #2e415a; /* Fallback */
   border-color: hsl(215, 32%, 27%);
 }
 
-h1 {
-  color: white;/*old browsers*/
-  color: hsl(0, 0%, 100%);
-  font-size: 1.125em;
-  margin: 20px 0;
-}
 
-h1:hover {
-  color: cyan;/*old browsers*/
-  color: hsl(178, 100%, 50%);
+/* Headers */
+
+.big-heading {
+  font-size: 1.8rem;
+  color: #ffffff; /* Fallback */
+  color: hsl(0, 0%, 100%);
+  margin: 2rem 0;
   cursor: pointer;
 }
 
-span {
-  color: white;/*old browsers*/
-  color: hsl(0, 0%, 100%);
-  font-size: 1.125em;
-}
-
-span:hover {
-  color: cyan;/*old browsers*/
+.big-heading:hover {
+  color: #00fff6; /* Fallback */
   color: hsl(178, 100%, 50%);
-  cursor: pointer;
 }
 
-.jules-wyvern {
+
+/* Card */
+
+.card {
+  background-color: #14243d; /* Fallback */
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1.5rem;
+  width: 28.5rem;
+  padding: 2rem;
+}
+
+
+/* Image Container */
+
+.image {
+  border-radius: 1rem;
+  position: relative;
+  height: 28.5rem;
+}
+
+.equilibrium {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.invisible-img {
+  position: absolute;
+  top: 12rem;
+  left: 12rem;
+  opacity: 0;
+}
+
+.image:hover {
+  cursor: pointer;
+  background-color: #00fff6; /* Fallback */
+  background-color: hsl(178, 100%, 50%);
+  opacity: 1;
+}
+
+.image:hover .equilibrium {
+  opacity: 0.5;
+}
+
+.image:hover .invisible-img {
+  opacity: 1;
+}
+
+
+/* Statistics */
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  margin: 2rem 0;
+}
+
+.eth {
+  color: #00fff6; /* Fallback */
+  color: hsl(178, 100%, 50%);
   display: flex;
   align-items: center;
 }
 
-#jules-wyvern {
-  width: 30px
+.time {
+  display: flex;
+  align-items: center;
 }
 
-.attribution {
-  font-size: 11px; text-align: center;
+
+/* Creator Attribution */
+
+.creator {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
 }
 
-.attribution a {
-  color: darkblue;/*old browsers*/
-  color: hsl(228, 45%, 44%);
+.creator img {
+  width: 2.5rem;
+  border: 0.1rem solid #ffffff;  /* Fallback */
+  border-radius: 100%;
+  margin-right: 1.5rem;
 }
 
-.attribution a:hover {
-  color: cyan;/*old browsers*/
-  color: hsl(178, 100%, 50%);
+.jules {
+  color: #ffffff; /* Fallback */
+  color: hsl(0, 0%, 100%);
+  margin: 0;
   cursor: pointer;
 }
 
+.jules:hover {
+  color: #00fff6; /* Fallback */
+  color: hsl(178, 100%, 50%);
+}
 
-/*Note: I know this is very messy, I'll try everything to get a lot better. Corrections are welcomed*/
+
+/* Footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3d51a2; /* Fallback */
+  color: hsl(228, 45%, 44%);
+  cursor: pointer;
+}
+
+.attribution a:hover {
+  color: #00fff6; /* Fallback */
+  color: hsl(178, 100%, 50%);
+}

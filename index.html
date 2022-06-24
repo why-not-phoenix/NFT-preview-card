@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+  <!-- Meta Data -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!-- Links -->
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Title -->
 
   <title>Frontend Mentor | NFT preview card component</title>
 
@@ -16,32 +29,61 @@
 
 
 <body>
-  <div class="main-section">
-    <div class="r">
-      <img class="invisible-img" src="images/icon-view.svg" alt="invisible-icon-img">
-      <img class="equilibrium" src="images/image-equilibrium.jpg" alt="equilibrium-img">
+
+  <!-- Card -->
+
+  <main class="card">
+
+    <!-- Card Images -->
+    <div class="image">
+      <img class="equilibrium" src="images/image-equilibrium.jpg" alt="">
+      <img class="invisible-img" src="images/icon-view.svg" alt="">
+
     </div>
-    <h1>Equilibrium #3429</h1>
+
+    <!-- Heading -->
+    <h1 class="big-heading">Equilibrium #3429</h1>
+
+    <!-- Introductory Paragraph -->
     <p>Our Equilibrium collection promotes balance and calm.</p>
-    <div class="para-2">
+
+    <!-- Statistics -->
+    <div class="stat">
+
+      <!-- Ethereum Statistic -->
       <div class="eth">
-        <img src="images/icon-ethereum.svg" alt="ethereum-icon-img">
-        <p class="icon-info">0.041 ETH</p>
+        <img src="images/icon-ethereum.svg" alt="ethereum-icon">
+        <span>0.041 ETH</span>
       </div>
-      <div class="time-lapse">
+
+      <!-- Duration Left -->
+      <div class="time">
         <img src="images/icon-clock.svg" alt="clock-icon">
-        <p class="icon-info">3 days left</p>
+        <span>3 days left</span>
       </div>
+
     </div>
+
+    <!-- Line Break -->
+
     <hr>
-    <div class="jules-wyvern">
-      <img id="jules-wyvern" src="images/image-avatar.png" alt="jules-wyvern-img">
-      <p class="icon-info">Creation of <span>Jules Wyvern</span></p>
+    
+    <!-- Creator Attribution -->
+    <div class="creator">
+      <img src="images/image-avatar.png" alt="jules-wyvern-img">
+      <p>Creation of <span class="jules">Jules Wyvern</span></p>
+
     </div>
-  </div>
+
+  </main>
+
+  <!-- Footer -->
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.frontendmentor.io/profile/why-not-phoenix" target="_blank">Dominion (@why-not-phoenix)</a>.
   </div>
+
 </body>
+
 </html>
